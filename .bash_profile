@@ -8,18 +8,14 @@ shopt -s histappend
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$PATH:$HOME/bin
 
-
 export HISTSIZE=5000
 export HISTFILESIZE=10000
-
 
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 
-
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
-
 
 txtred='\e[0;31m' # Red
 txtgrn='\e[0;32m' # Green
@@ -35,17 +31,14 @@ print_before_the_prompt () {
     printf "\n $txtred%s: $bldpur%s $txtgrn%s\n$txtrst" "$HOST_NAME" "$dir" "$(vcprompt)"
 }
 
-
 PROMPT_COMMAND=print_before_the_prompt
 PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 PS1="$ >"
-
 
 function mkcd()
 {
         mkdir $1 && cd $1
 }
-
 
 # -------
 # Aliases
