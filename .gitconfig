@@ -1,0 +1,5 @@
+[user]
+        email = email@email.com
+        name = rt
+[core]
+        editor = nano
