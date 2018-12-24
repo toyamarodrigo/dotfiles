@@ -7,6 +7,8 @@ shopt -s histappend
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$PATH:$HOME/bin
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
 export HISTSIZE=5000
 export HISTFILESIZE=10000
