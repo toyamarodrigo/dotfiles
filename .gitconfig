@@ -1,5 +1,5 @@
 [user]
         email = email@email.com
-        name = rt
+        name = name
 [core]
         editor = nano
