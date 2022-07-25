@@ -1,6 +1,6 @@
 #!  /bin/bash
 
-DOTFILES = (.bash_profile .gitconfig .gitignore)
+DOTFILES = (.bash_profile .gitconfig)
 
 # Remove old dot files and replace them
 for    dotfile in $(echo ${DOTFILES[*]});
